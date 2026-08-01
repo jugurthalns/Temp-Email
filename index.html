@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>signal — temp inbox</title>
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#050809;
+    --grid: rgba(66,232,255,0.05);
+    --panel:#0a1216;
+    --panel-2:#0d1a1f;
+    --line: rgba(103,230,255,0.14);
+    --line-soft: rgba(103,230,255,0.07);
+    --cyan:#3fe9ff;
+    --cyan-dim:#1c6b78;
+    --cyan-glow: rgba(63,233,255,0.35);
+    --text:#eafcff;
+    --text-dim:#6f9198;
+    --text-faint:#3f5a60;
+    --green:#4de8a4;
+    --amber:#ffb454;
+    --red:#ff6868;
+    --pink:#ff5da2;
+    --tg-blue:#4fb3ff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:32px 16px 64px;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: center top;
+  }
+  .mono{ font-family:'Space Mono', monospace; }
+
+  .app{
+    width:100%;
+    max-width:420px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  /* header */
+  .header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    padding:12px 14px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    flex-wrap:wrap;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; }
+  .brand-icon{
+    width:36px;height:36px;border-radius:50%;
+    overflow:hidden;
+    flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    background:#0c0c0c;
+  }
+  .brand-icon img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .brand-name{
+    font-size:14.5px; font-weight:700; letter-spacing:0.2px;
+    background: linear-gradient(90deg, #ff5858, #6a5cff, #3fa0ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    filter: drop-shadow(0 0 6px rgba(106,92,255,0.45));
+  }
+  .brand-sub{ font-size:10.5px; color:#5fd6c9; margin-top:1px; letter-spacing:0.2px; }
+
+  .social-row{ display:flex; align-items:center; justify-content:center; gap:10px; width:100%; margin-top:2px; }
+  .social-chip{
+    display:flex; align-items:center; gap:5px;
+    text-decoration:none;
+    font-family:'Space Mono', monospace;
+    font-size:11px;
+    padding:5px 9px;
+    border-radius:8px;
+    border:1px solid var(--line-soft);
+    background:rgba(255,255,255,0.02);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .social-chip svg{ width:14px; height:14px; flex-shrink:0; }
+  .social-chip:hover{ transform:translateY(-1px); }
+  .social-chip.tg{
+    color:#5fc4ff;
+    border-color:rgba(41,171,226,0.35);
+    box-shadow:0 0 12px rgba(41,171,226,0.18);
+  }
+  .social-chip.tg:hover{ box-shadow:0 0 18px rgba(41,171,226,0.4); }
+  .social-chip.ig{
+    border-color:rgba(253,29,109,0.35);
+    box-shadow:0 0 12px rgba(214,57,142,0.18);
+    background: linear-gradient(90deg, rgba(131,58,180,0.10), rgba(253,29,29,0.10), rgba(252,176,69,0.10));
+  }
+  .social-chip.ig:hover{ box-shadow:0 0 18px rgba(214,57,142,0.4); }
+  .social-chip.ig span{
+    background: linear-gradient(90deg, #c73dd6, #fd3a5c, #fbb040);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:700;
+  }
+
+  .status-dot{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 0 3px rgba(77,232,164,0.15);
+    flex-shrink:0;
+  }
+  .status-dot.off{ background:var(--text-faint); box-shadow:none; }
+  .status-dot.pending{ background:var(--amber); box-shadow:0 0 0 3px rgba(255,180,84,0.15); animation:blink 1s infinite; }
+  @keyframes blink{ 50%{ opacity:0.35; } }
+
+  /* badge */
+  .badge{
+    align-self:center;
+    display:flex; align-items:center; gap:8px;
+    padding:8px 18px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:var(--line-soft);
+    color:var(--cyan);
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+  }
+  .badge svg{ width:14px; height:14px; }
+
+  /* hero */
+  .hero{
+    text-align:center;
+    padding:10px 0 4px;
+    position:relative;
+  }
+  .hero-word{
+    font-size:52px;
+    font-weight:700;
+    letter-spacing:-1.5px;
+    color:var(--cyan);
+    text-shadow: 0 0 22px var(--cyan-glow), 0 0 60px rgba(63,233,255,0.12);
+    position:relative;
+    display:inline-block;
+  }
+  .hero-scan{
+    position:absolute;
+    left:50%; top:0;
+    transform:translateX(-50%);
+    width:220px; height:78px;
+    overflow:hidden;
+    pointer-events:none;
+    border-radius:8px;
+  }
+  .hero-scan::after{
+    content:"";
+    position:absolute; left:0; right:0; height:2px;
+    background:linear-gradient(90deg, transparent, var(--cyan), transparent);
+    animation: scan 2.6s linear infinite;
+    opacity:0.7;
+  }
+  @keyframes scan{
+    0%{ top:-10%; }
+    100%{ top:110%; }
+  }
+
+  /* address box */
+  .addr-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:6px 6px 6px 16px;
+  }
+  .addr-text{
+    flex:1;
+    min-width:0;
+    font-size:15px;
+    color:var(--cyan);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .addr-text.loading{ color:var(--text-faint); }
+  .copy-btn{
+    display:flex; align-items:center; gap:7px;
+    background:var(--cyan);
+    color:#052226;
+    border:none;
+    border-radius:10px;
+    padding:11px 16px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:13.5px;
+    cursor:pointer;
+    white-space:nowrap;
+    transition: transform .12s ease, background .15s ease;
+  }
+  .copy-btn:active{ transform:scale(0.96); }
+  .copy-btn.copied{ background:var(--green); }
+  .copy-btn svg{ width:15px; height:15px; }
+
+  /* action row */
+  .actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .action-btn{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    color:var(--text);
+    border-radius:12px;
+    padding:12px 10px;
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    font-weight:500;
+    cursor:pointer;
+    transition: border-color .15s ease, background .15s ease, color .15s ease;
+  }
+  .action-btn:hover{ border-color:var(--cyan); background:var(--panel-2); }
+  .action-btn svg{ width:15px; height:15px; color:var(--cyan); flex-shrink:0; }
+  .action-btn.saved{ border-color:var(--cyan); background:var(--line-soft); color:var(--cyan); }
+  .action-btn.saved svg{ color:var(--cyan); }
+
+  .generate-btn{
+    display:flex; align-items:center; justify-content:center; gap:9px;
+    background:var(--cyan);
+    color:#052226;
+    border:none;
+    border-radius:14px;
+    padding:15px 10px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:14.5px;
+    cursor:pointer;
+    box-shadow:0 0 24px rgba(63,233,255,0.18);
+    transition: transform .12s ease;
+  }
+  .generate-btn:active{ transform:scale(0.98); }
+  .generate-btn svg{ width:17px; height:17px; }
+
+  .saved-panel{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    display:none;
+  }
+  .saved-panel.open{ display:block; }
+  .saved-row{
+    display:flex; align-items:center; gap:10px;
+    padding:11px 14px;
+    border-bottom:1px solid var(--line-soft);
+    cursor:pointer;
+  }
+  .saved-row:last-child{ border-bottom:none; }
+  .saved-row:hover{ background:var(--panel-2); }
+  .saved-addr{ flex:1; min-width:0; font-size:12.5px; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-family:'Space Mono', monospace; }
+  .saved-remove{ background:none; border:none; color:var(--text-faint); cursor:pointer; padding:4px; display:flex; flex-shrink:0; }
+  .saved-remove:hover{ color:var(--red); }
+  .saved-remove svg{ width:14px; height:14px; }
+  .saved-empty{ padding:16px 14px; font-size:12px; color:var(--text-dim); text-align:center; }
+
+  .footnote{
+    text-align:center;
+    font-size:11.5px;
+    color:var(--text-faint);
+    letter-spacing:0.2px;
+  }
+
+  /* inbox */
+  .inbox-card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .inbox-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 16px;
+    border-bottom:1px solid var(--line-soft);
+  }
+  .inbox-head-left{ display:flex; align-items:center; gap:9px; }
+  .inbox-head-left svg{ width:18px; height:18px; color:var(--cyan); }
+  .inbox-title{ font-weight:600; font-size:14.5px; }
+  .sync-info{
+    display:flex; align-items:center; gap:8px;
+    font-size:11px; color:var(--text-dim);
+  }
+  .refresh-btn{
+    background:none; border:none; color:var(--text-dim);
+    cursor:pointer; display:flex; padding:2px;
+  }
+  .refresh-btn svg{ width:14px; height:14px; }
+  .refresh-btn.spin svg{ animation:spin 0.8s linear infinite; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  .empty-state{
+    display:flex; flex-direction:column; align-items:center;
+    padding:44px 20px 40px;
+    text-align:center;
+  }
+  .empty-icon{
+    position:relative;
+    width:58px; height:58px;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:18px;
+  }
+  .empty-icon svg{ width:44px; height:44px; color:var(--text-faint); }
+  .pulse-dot{
+    position:absolute; top:2px; right:2px;
+    width:12px; height:12px; border-radius:50%;
+    background:var(--cyan);
+    box-shadow:0 0 0 0 var(--cyan-glow);
+    animation: pulse 1.8s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(63,233,255,0.5); }
+    70%{ box-shadow:0 0 0 12px rgba(63,233,255,0); }
+    100%{ box-shadow:0 0 0 0 rgba(63,233,255,0); }
+  }
+  .empty-title{ font-size:14.5px; font-weight:600; margin-bottom:6px; }
+  .empty-sub{ font-size:12.5px; color:var(--text-dim); line-height:1.5; max-width:250px; }
+
+  .msg-list{ display:flex; flex-direction:column; }
+  .msg-row{
+    display:flex; gap:10px; align-items:flex-start;
+    padding:14px 16px;
+    border-bottom:1px solid var(--line-soft);
+    cursor:pointer;
+    transition: background .12s ease;
+  }
+  .msg-row:last-child{ border-bottom:none; }
+  .msg-row:hover{ background:var(--panel-2); }
+  .msg-delete{
+    background:none; border:none; color:var(--text-faint);
+    cursor:pointer; padding:4px; flex-shrink:0; display:flex;
+    margin-top:1px;
+  }
+  .msg-delete:hover{ color:var(--red); }
+  .msg-delete svg{ width:16px; height:16px; }
+  .msg-dot-wrap{ padding-top:5px; flex-shrink:0; }
+  .msg-dot{ width:7px; height:7px; border-radius:50%; background:var(--cyan); }
+  .msg-dot.read{ background:var(--text-faint); }
+  .msg-body{ flex:1; min-width:0; }
+  .msg-from{ font-size:13.5px; font-weight:600; margin-bottom:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .msg-subject{ font-size:12.5px; color:var(--text-dim); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .msg-time{ font-size:10.5px; color:var(--text-faint); flex-shrink:0; padding-top:2px; }
+
+  /* modal */
+  .overlay{
+    position:fixed; inset:0;
+    background:rgba(2,5,6,0.72);
+    display:none;
+    align-items:flex-end;
+    justify-content:center;
+    z-index:20;
+  }
+  .overlay.show{ display:flex; }
+  .modal{
+    width:100%; max-width:420px;
+    max-height:80vh;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:20px 20px 0 0;
+    display:flex; flex-direction:column;
+    overflow:hidden;
+  }
+  .modal-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 18px;
+    border-bottom:1px solid var(--line-soft);
+    flex-shrink:0;
+  }
+  .modal-title{ font-size:14px; font-weight:600; }
+  .modal-close{
+    background:none; border:none; color:var(--text-dim);
+    cursor:pointer; padding:4px;
+  }
+  .modal-close svg{ width:18px; height:18px; }
+  .modal-body{ padding:18px; overflow-y:auto; }
+  .modal-subject{ font-size:16px; font-weight:700; margin-bottom:10px; }
+  .modal-meta{ font-size:12px; color:var(--text-dim); margin-bottom:16px; line-height:1.6; }
+  .modal-meta b{ color:var(--text); font-weight:500; }
+  .modal-content{
+    font-size:13.5px; color:var(--text); line-height:1.7;
+    word-wrap:break-word;
+    font-family:'Inter',sans-serif;
+  }
+  .modal-content img{ max-width:100% !important; height:auto !important; border-radius:8px; margin:8px 0; display:block; }
+  .modal-content a{ color:var(--cyan); }
+  .modal-content p{ margin:0 0 12px; }
+  .modal-content table{ width:100% !important; max-width:100% !important; border-collapse:collapse; }
+  .modal-content td, .modal-content th{ word-break:break-word; }
+  .modal-content, .modal-content *{
+    background-color:transparent !important;
+    color:inherit !important;
+    max-width:100% !important;
+    box-sizing:border-box;
+  }
+  .modal-content hr{ border-color:var(--line); margin:14px 0; }
+  .modal-content blockquote{ margin:0 0 12px; padding-left:12px; border-left:2px solid var(--line); color:var(--text-dim); }
+
+  .toast{
+    position:fixed; bottom:24px; left:50%; transform:translateX(-50%);
+    background:var(--panel-2); border:1px solid var(--line);
+    color:var(--text); font-size:13px; padding:10px 18px;
+    border-radius:10px; z-index:30;
+    opacity:0; pointer-events:none; transition:opacity .2s ease;
+  }
+  .toast.show{ opacity:1; }
+
+  .sr-only{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+</style>
+</head>
+<body>
+<h1 class="sr-only">Temporary email inbox app — generate a disposable address and receive real emails to it</h1>
+
+<div class="app">
+
+  <div class="header">
+    <div class="brand">
+      <div class="brand-icon"><img src="data:image/jpeg;base64,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" alt=""></div>
+      <div>
+        <div class="brand-name">jiji's</div>
+        <div class="brand-sub">Temp E-mail</div>
+      </div>
+    </div>
+    <div class="social-row">
+      <a class="social-chip tg" href="https://t.me/zix4z" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        @zix4z
+      </a>
+      <a class="social-chip ig" href="https://instagram.com/juju.lns" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none">
+          <defs>
+            <linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#833ab4"/>
+              <stop offset="50%" stop-color="#fd1d1d"/>
+              <stop offset="100%" stop-color="#fcb045"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="20" height="20" rx="6" stroke="url(#igGrad)" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="4.2" stroke="url(#igGrad)" stroke-width="1.8"/>
+          <circle cx="17.4" cy="6.6" r="1.1" fill="url(#igGrad)"/>
+        </svg>
+        <span>@juju.lns</span>
+      </a>
+      <div class="status-dot pending" id="statusDot" title="connecting"></div>
+    </div>
+  </div>
+
+  <div class="badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V6l8-4z"/></svg>
+    ephemeral &amp; anonymous
+  </div>
+
+  <div class="hero">
+    <div class="hero-scan"></div>
+    <span class="hero-word mono">inbox</span>
+  </div>
+
+  <div class="addr-box">
+    <div class="addr-text loading mono" id="addrText">generating address...</div>
+    <button class="copy-btn" id="copyBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+      <span id="copyLabel">copy</span>
+    </button>
+  </div>
+
+  <div class="actions">
+    <button class="action-btn" id="saveBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+      <span id="saveLabel">save address</span>
+    </button>
+    <button class="action-btn" id="savedToggleBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      <span id="savedCountLabel">saved (0)</span>
+    </button>
+  </div>
+
+  <div class="saved-panel" id="savedPanel">
+    <div id="savedList"></div>
+  </div>
+
+  <button class="generate-btn" id="newBtn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.13-3.36L23 10M1 14l5.36 4.36A9 9 0 0020.49 15"/></svg>
+    generate new
+  </button>
+
+  <div class="footnote">emails auto-delete over time. no sign-up needed.</div>
+
+  <div class="inbox-card">
+    <div class="inbox-head">
+      <div class="inbox-head-left">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+        <span class="inbox-title">inbox</span>
+      </div>
+      <div class="sync-info">
+        <span id="syncLabel">connecting...</span>
+        <button class="refresh-btn" id="refreshBtn" aria-label="refresh inbox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.13-3.36L23 10M1 14l5.36 4.36A9 9 0 0020.49 15"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="emptyState" class="empty-state">
+      <div class="empty-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+        <div class="pulse-dot"></div>
+      </div>
+      <div class="empty-title">waiting for emails...</div>
+      <div class="empty-sub">send an email to your generated address and it will appear here within a few seconds.</div>
+    </div>
+
+    <div id="msgList" class="msg-list"></div>
+  </div>
+
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="modal-head">
+      <span class="modal-title">message</span>
+      <div style="display:flex; align-items:center; gap:6px;">
+        <button class="modal-close" id="modalDelete" aria-label="delete message" title="delete">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a1 1 0 011-1h6a1 1 0 011 1v2"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+        </button>
+        <button class="modal-close" id="modalClose" aria-label="close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-subject" id="modalSubject"></div>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-content" id="modalContent">loading message...</div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API_BASES = ["https://api.mail.tm", "https://api.mail.gw"];
+const ACCOUNT_KEY = "signal_inbox_current_v3";
+const SAVED_KEY = "signal_inbox_saved_v3";
+const DISMISSED_KEY_PREFIX = "signal_inbox_dismissed_";
+
+let state = {
+  login: null,
+  domain: null,
+  password: null,
+  token: null,
+  apiBase: null,
+  messages: [],
+  pollTimer: null,
+  lastSync: null,
+  dismissed: new Set()
+};
+
+const el = {
+  addrText: document.getElementById('addrText'),
+  copyBtn: document.getElementById('copyBtn'),
+  copyLabel: document.getElementById('copyLabel'),
+  newBtn: document.getElementById('newBtn'),
+  saveBtn: document.getElementById('saveBtn'),
+  saveLabel: document.getElementById('saveLabel'),
+  savedToggleBtn: document.getElementById('savedToggleBtn'),
+  savedCountLabel: document.getElementById('savedCountLabel'),
+  savedPanel: document.getElementById('savedPanel'),
+  savedList: document.getElementById('savedList'),
+  statusDot: document.getElementById('statusDot'),
+  syncLabel: document.getElementById('syncLabel'),
+  refreshBtn: document.getElementById('refreshBtn'),
+  emptyState: document.getElementById('emptyState'),
+  msgList: document.getElementById('msgList'),
+  overlay: document.getElementById('overlay'),
+  modalClose: document.getElementById('modalClose'),
+  modalDelete: document.getElementById('modalDelete'),
+  modalSubject: document.getElementById('modalSubject'),
+  modalMeta: document.getElementById('modalMeta'),
+  modalContent: document.getElementById('modalContent'),
+  toast: document.getElementById('toast')
+};
+
+function showToast(msg){
+  el.toast.textContent = msg;
+  el.toast.classList.add('show');
+  setTimeout(()=> el.toast.classList.remove('show'), 2200);
+}
+
+function currentAddress(){
+  if(!state.login || !state.domain) return null;
+  return state.login + '@' + state.domain;
+}
+
+function randomLogin(){
+  const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+  let s = "";
+  for(let i=0;i<11;i++) s += chars[Math.floor(Math.random()*chars.length)];
+  return s;
+}
+
+function setStatus(mode){
+  el.statusDot.className = "status-dot" + (mode === "off" ? " off" : mode === "pending" ? " pending" : "");
+  el.statusDot.title = mode === "off" ? "offline" : mode === "pending" ? "connecting" : "online";
+}
+
+function getSaved(){
+  try{ return JSON.parse(localStorage.getItem(SAVED_KEY) || "[]"); }
+  catch(e){ return []; }
+}
+function setSaved(list){
+  localStorage.setItem(SAVED_KEY, JSON.stringify(list));
+}
+function isCurrentSaved(){
+  const addr = currentAddress();
+  if(!addr) return false;
+  return getSaved().some(s => s.address === addr);
+}
+function updateSaveButton(){
+  const saved = isCurrentSaved();
+  el.saveBtn.classList.toggle('saved', saved);
+  el.saveLabel.textContent = saved ? 'saved' : 'save address';
+  renderSavedList();
+}
+function renderSavedList(){
+  const list = getSaved();
+  el.savedCountLabel.textContent = 'saved (' + list.length + ')';
+  if(list.length === 0){
+    el.savedList.innerHTML = '<div class="saved-empty">no saved addresses yet</div>';
+    return;
+  }
+  el.savedList.innerHTML = list.map(s => `<div class="saved-row" data-addr="${escapeHtml(s.address)}">
+    <div class="saved-addr mono">${escapeHtml(s.address)}</div>
+    <button class="saved-remove" data-remove="${escapeHtml(s.address)}" aria-label="remove saved address">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+    </button>
+  </div>`).join('');
+
+  el.savedList.querySelectorAll('.saved-row').forEach(row => {
+    row.addEventListener('click', (e) => {
+      if(e.target.closest('.saved-remove')) return;
+      const addr = row.getAttribute('data-addr');
+      switchToAddress(addr);
+    });
+  });
+  el.savedList.querySelectorAll('.saved-remove').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const addr = btn.getAttribute('data-remove');
+      const next = getSaved().filter(s => s.address !== addr);
+      setSaved(next);
+      updateSaveButton();
+    });
+  });
+}
+
+function switchToAddress(addr){
+  const [login, domain] = addr.split('@');
+  if(!login || !domain) return;
+  const saved = getSaved().find(s => s.address === addr);
+  if(!saved){ showToast('missing saved credentials for this address'); return; }
+  if(state.pollTimer) clearInterval(state.pollTimer);
+  state.login = login;
+  state.domain = domain;
+  state.password = saved.password;
+  state.apiBase = saved.apiBase || API_BASES[0];
+  state.token = null;
+  state.messages = [];
+  loadDismissed();
+  persistAccount();
+  el.addrText.textContent = addr;
+  el.addrText.classList.remove('loading');
+  updateSaveButton();
+  setStatus('pending');
+  fetchMessages();
+  startPolling();
+  el.savedPanel.classList.remove('open');
+}
+
+function loadDismissed(){
+  const addr = currentAddress();
+  if(!addr){ state.dismissed = new Set(); return; }
+  try{
+    const raw = localStorage.getItem(DISMISSED_KEY_PREFIX + addr);
+    state.dismissed = new Set(raw ? JSON.parse(raw) : []);
+  }catch(e){ state.dismissed = new Set(); }
+}
+function persistDismissed(){
+  const addr = currentAddress();
+  if(!addr) return;
+  localStorage.setItem(DISMISSED_KEY_PREFIX + addr, JSON.stringify([...state.dismissed]));
+}
+
+async function apiFetch(path, options, base){
+  options = options || {};
+  base = base || state.apiBase || API_BASES[0];
+  const headers = Object.assign({ 'Content-Type': 'application/json' }, options.headers || {});
+  if(state.token) headers['Authorization'] = 'Bearer ' + state.token;
+  let attempt = 0;
+  while(true){
+    let res;
+    try{
+      res = await fetch(base + path, Object.assign({}, options, { headers }));
+    }catch(networkErr){
+      // real network failure (offline, DNS, CORS) — retry a couple times before giving up
+      if(attempt < 2){ attempt++; await sleep(400 * attempt); continue; }
+      throw networkErr;
+    }
+    if(res.status === 429 && attempt < 3){
+      // rate limited — back off and retry
+      const retryAfter = Number(res.headers.get('Retry-After')) || (0.6 * (attempt + 1));
+      attempt++;
+      await sleep(retryAfter * 1000);
+      continue;
+    }
+    if(!res.ok){
+      const err = new Error('API ' + res.status);
+      err.status = res.status;
+      throw err;
+    }
+    if(res.status === 204) return null;
+    return res.json();
+  }
+}
+
+function sleep(ms){ return new Promise(r => setTimeout(r, ms)); }
+
+function persistAccount(){
+  if(!state.login || !state.domain) return;
+  localStorage.setItem(ACCOUNT_KEY, JSON.stringify({
+    login: state.login,
+    domain: state.domain,
+    password: state.password,
+    token: state.token,
+    apiBase: state.apiBase
+  }));
+}
+
+async function ensureToken(){
+  if(state.token) return;
+  if(!state.password) throw new Error('no stored credentials for this address');
+  const tokenRes = await apiFetch('/token', {
+    method:'POST',
+    body: JSON.stringify({ address: currentAddress(), password: state.password })
+  });
+  state.token = tokenRes.token;
+  persistAccount();
+}
+
+async function pickAvailableDomain(base){
+  const domainsRes = await apiFetch('/domains?page=1', null, base);
+  const domains = (domainsRes['hydra:member'] || []).filter(d => d.isActive && !d.isPrivate);
+  if(!domains.length) throw new Error('no public domains available');
+  return domains[Math.floor(Math.random()*domains.length)].domain;
+}
+
+async function generateAddress(){
+  if(state.generating) return;
+  state.generating = true;
+  setStatus('pending');
+  el.addrText.textContent = 'generating address...';
+  el.addrText.classList.add('loading');
+  if(state.pollTimer) clearInterval(state.pollTimer);
+
+  let lastErr = null;
+  for(const base of API_BASES){
+    try{
+      const domain = await pickAvailableDomain(base);
+      const login = randomLogin();
+      const address = login + '@' + domain;
+      const password = randomLogin() + randomLogin();
+
+      state.token = null;
+      try{
+        await apiFetch('/accounts', { method:'POST', body: JSON.stringify({ address, password }) }, base);
+      }catch(createErr){
+        if(createErr.status === 422 || createErr.status === 400){
+          const retryDomain = await pickAvailableDomain(base);
+          const retryAddress = login + '@' + retryDomain;
+          await apiFetch('/accounts', { method:'POST', body: JSON.stringify({ address: retryAddress, password }) }, base);
+          await finishGenerate(login, retryDomain, password, base);
+        }else{
+          throw createErr;
+        }
+      }
+      if(!state.token){
+        await finishGenerate(login, domain, password, base);
+      }
+      state.generating = false;
+      return;
+    }catch(err){
+      console.error('provider failed:', base, err);
+      lastErr = err;
+      // try the next provider in the list
+    }
+  }
+
+  // every provider failed
+  console.error(lastErr);
+  const rateLimited = lastErr && lastErr.status === 429;
+  el.addrText.textContent = rateLimited ? 'rate limited — tap generate to retry' : 'connection failed — tap generate new';
+  el.addrText.classList.remove('loading');
+  setStatus('off');
+  el.syncLabel.textContent = 'offline';
+  showToast(rateLimited ? 'too many requests — wait a moment and try again' : 'mail servers unreachable right now. tap generate to retry.');
+  state.generating = false;
+}
+
+async function finishGenerate(login, domain, password, base){
+  const tokenRes = await apiFetch('/token', { method:'POST', body: JSON.stringify({ address: login + '@' + domain, password }) }, base);
+  state.login = login;
+  state.domain = domain;
+  state.password = password;
+  state.token = tokenRes.token;
+  state.apiBase = base;
+  state.messages = [];
+  loadDismissed();
+  persistAccount();
+  el.addrText.textContent = currentAddress();
+  el.addrText.classList.remove('loading');
+  updateSaveButton();
+  setStatus('on');
+  renderMessages();
+  startPolling();
+  fetchMessages();
+}
+
+async function loadStoredAccount(){
+  const raw = localStorage.getItem(ACCOUNT_KEY);
+  if(!raw){
+    updateSaveButton();
+    return generateAddress();
+  }
+  try{
+    const saved = JSON.parse(raw);
+    state.login = saved.login;
+    state.domain = saved.domain;
+    state.password = saved.password;
+    state.token = saved.token;
+    state.apiBase = saved.apiBase || API_BASES[0];
+    loadDismissed();
+    el.addrText.textContent = currentAddress();
+    el.addrText.classList.remove('loading');
+    updateSaveButton();
+    setStatus('pending');
+    await ensureToken();
+    await fetchMessages();
+    setStatus('on');
+    startPolling();
+  }catch(err){
+    console.error(err);
+    generateAddress();
+  }
+}
+
+async function fetchMessages(){
+  if(!state.login || !state.domain) return;
+  if(state.fetching) return;
+  state.fetching = true;
+  try{
+    await ensureToken();
+    const data = await apiFetch('/messages?page=1');
+    const list = data['hydra:member'] || [];
+    const filtered = list
+      .filter(m => !state.dismissed.has(String(m.id)))
+      .map(m => ({
+        id: m.id,
+        from: (m.from && (m.from.name || m.from.address)) || 'unknown sender',
+        subject: m.subject || '',
+        date: m.createdAt
+      }));
+    state.messages = filtered.sort((a,b)=> new Date(b.date) - new Date(a.date));
+    state.lastSync = Date.now();
+    renderMessages();
+    setStatus('on');
+    el.refreshBtn.classList.remove('spin');
+  }catch(err){
+    console.error(err);
+    if(err.status === 401){
+      state.token = null;
+      try{
+        await ensureToken();
+        // re-auth succeeded — try the fetch again right away instead of waiting for next poll
+        const data = await apiFetch('/messages?page=1');
+        const list = data['hydra:member'] || [];
+        state.messages = list
+          .filter(m => !state.dismissed.has(String(m.id)))
+          .map(m => ({ id: m.id, from: (m.from && (m.from.name || m.from.address)) || 'unknown sender', subject: m.subject || '', date: m.createdAt }))
+          .sort((a,b)=> new Date(b.date) - new Date(a.date));
+        state.lastSync = Date.now();
+        renderMessages();
+        setStatus('on');
+        el.refreshBtn.classList.remove('spin');
+        state.fetching = false;
+        updateSyncLabel();
+        return;
+      }catch(e){ /* fall through to offline state */ }
+    }
+    setStatus('off');
+    el.refreshBtn.classList.remove('spin');
+  }finally{
+    state.fetching = false;
+  }
+  updateSyncLabel();
+}
+
+function updateSyncLabel(){
+  if(!state.lastSync){ el.syncLabel.textContent = 'connecting...'; return; }
+  const secs = Math.max(0, Math.round((Date.now() - state.lastSync)/1000));
+  el.syncLabel.textContent = 'synced ' + secs + 's ago';
+}
+setInterval(updateSyncLabel, 1000);
+
+function renderMessages(){
+  if(state.messages.length === 0){
+    el.emptyState.style.display = 'flex';
+    el.msgList.innerHTML = '';
+    return;
+  }
+  el.emptyState.style.display = 'none';
+  el.msgList.innerHTML = state.messages.map(m => {
+    const from = m.from || 'unknown sender';
+    const subject = m.subject || '(no subject)';
+    const time = timeAgo(m.date);
+    return `<div class="msg-row" data-id="${m.id}">
+      <button class="msg-delete" data-delete="${m.id}" aria-label="delete message">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a1 1 0 011-1h6a1 1 0 011 1v2"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+      </button>
+      <div class="msg-dot-wrap"><div class="msg-dot"></div></div>
+      <div class="msg-body">
+        <div class="msg-from">${escapeHtml(from)}</div>
+        <div class="msg-subject">${escapeHtml(subject)}</div>
+      </div>
+      <div class="msg-time">${time}</div>
+    </div>`;
+  }).join('');
+
+  document.querySelectorAll('.msg-row').forEach(row => {
+    row.addEventListener('click', (e) => {
+      if(e.target.closest('.msg-delete')) return;
+      openMessage(row.getAttribute('data-id'));
+    });
+  });
+  document.querySelectorAll('.msg-delete').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const id = btn.getAttribute('data-delete');
+      state.dismissed.add(id);
+      persistDismissed();
+      state.messages = state.messages.filter(m => String(m.id) !== id);
+      renderMessages();
+      showToast('message deleted');
+      apiFetch('/messages/' + id, { method:'DELETE' }).catch(()=>{});
+    });
+  });
+}
+
+function timeAgo(dateStr){
+  const diff = Math.max(0, Date.now() - new Date(dateStr.replace(' ', 'T')).getTime());
+  const mins = Math.round(diff/60000);
+  if(mins < 1) return 'now';
+  if(mins < 60) return mins + 'm';
+  const hrs = Math.round(mins/60);
+  if(hrs < 24) return hrs + 'h';
+  return Math.round(hrs/24) + 'd';
+}
+
+function escapeHtml(str){
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+async function openMessage(id){
+  state.openMessageId = id;
+  el.overlay.classList.add('show');
+  el.modalSubject.textContent = '';
+  el.modalMeta.textContent = '';
+  el.modalContent.textContent = 'loading message...';
+  try{
+    await ensureToken();
+    const msg = await apiFetch('/messages/' + id);
+    el.modalSubject.textContent = msg.subject || '(no subject)';
+    const fromLabel = (msg.from && (msg.from.name || msg.from.address)) || 'unknown';
+    el.modalMeta.innerHTML = '<b>from</b> ' + escapeHtml(fromLabel) + '<br><b>received</b> ' + new Date(msg.createdAt || '').toLocaleString();
+
+    const htmlBody = Array.isArray(msg.html) ? msg.html.join('') : (msg.html || '');
+    if(htmlBody && htmlBody.length){
+      el.modalContent.style.whiteSpace = 'normal';
+      el.modalContent.innerHTML = sanitizeHtml(htmlBody);
+    } else if(msg.text){
+      el.modalContent.style.whiteSpace = 'pre-wrap';
+      el.modalContent.textContent = msg.text;
+    } else {
+      el.modalContent.style.whiteSpace = 'normal';
+      el.modalContent.textContent = '(empty message)';
+    }
+  }catch(err){
+    console.error(err);
+    el.modalContent.textContent = 'could not load this message.';
+  }
+}
+
+function sanitizeHtml(raw){
+  const doc = document.createElement('div');
+  doc.innerHTML = raw;
+  doc.querySelectorAll('script, style, iframe, object, embed, link').forEach(n => n.remove());
+  doc.querySelectorAll('*').forEach(node => {
+    [...node.attributes].forEach(attr => {
+      if(/^on/i.test(attr.name)) node.removeAttribute(attr.name);
+    });
+  });
+  return doc.innerHTML;
+}
+
+function startPolling(){
+  if(state.pollTimer) clearInterval(state.pollTimer);
+  state.pollTimer = setInterval(fetchMessages, 3000);
+}
+
+document.addEventListener('visibilitychange', () => {
+  if(document.visibilityState === 'visible' && state.login && state.domain){
+    fetchMessages();
+  }
+});
+
+el.copyBtn.addEventListener('click', async () => {
+  const addr = currentAddress();
+  if(!addr) return;
+  try{
+    await navigator.clipboard.writeText(addr);
+  }catch(err){
+    const ta = document.createElement('textarea');
+    ta.value = addr;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+  el.copyBtn.classList.add('copied');
+  el.copyLabel.textContent = 'copied';
+  setTimeout(()=>{
+    el.copyBtn.classList.remove('copied');
+    el.copyLabel.textContent = 'copy';
+  }, 1600);
+});
+
+el.saveBtn.addEventListener('click', () => {
+  const addr = currentAddress();
+  if(!addr) return;
+  const list = getSaved();
+  if(list.some(s => s.address === addr)){
+    setSaved(list.filter(s => s.address !== addr));
+    showToast('removed from saved');
+  }else{
+    list.unshift({ address: addr, password: state.password, apiBase: state.apiBase });
+    setSaved(list);
+    showToast('address saved');
+  }
+  updateSaveButton();
+});
+
+el.savedToggleBtn.addEventListener('click', () => {
+  el.savedPanel.classList.toggle('open');
+});
+
+el.newBtn.addEventListener('click', () => {
+  if(state.pollTimer) clearInterval(state.pollTimer);
+  generateAddress();
+});
+
+el.refreshBtn.addEventListener('click', () => {
+  el.refreshBtn.classList.add('spin');
+  fetchMessages();
+});
+
+el.modalClose.addEventListener('click', () => el.overlay.classList.remove('show'));
+
+el.modalDelete.addEventListener('click', () => {
+  const id = state.openMessageId;
+  if(!id) return;
+  state.dismissed.add(String(id));
+  persistDismissed();
+  state.messages = state.messages.filter(m => String(m.id) !== String(id));
+  renderMessages();
+  el.overlay.classList.remove('show');
+  showToast('message deleted');
+  apiFetch('/messages/' + id, { method:'DELETE' }).catch(()=>{});
+});
+el.overlay.addEventListener('click', (e) => { if(e.target === el.overlay) el.overlay.classList.remove('show'); });
+
+loadStoredAccount();
+</script>
+</body>
+</html>
